@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Stop all running containers.
+
+prefix=$(command -v winpty)
+$prefix docker stop $(docker ps -a -q)

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# SSH into a running container.
+
+ssh dev@localhost -p 22 -Y

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Restart an existing container.
+
+prefix=$(command -v winpty)
+$prefix docker start -ai noble_rde

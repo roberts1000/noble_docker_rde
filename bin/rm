@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Delete the standard RDE container.
+
+prefix=$(command -v winpty)
+echo "Deleting container noble_rde..."
+$prefix docker rm noble_rde
