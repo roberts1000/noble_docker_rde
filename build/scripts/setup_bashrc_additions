@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+file_path = ENV['USER_FILES_DIR'] + '/.bashrc_additions'
+home_bashrc = ENV['HOME_DIR'] + '/.bashrc'
+
+if File.file?(file_path)
+  system "/bin/bash -l -c 'mv #{file_path} ~'"
+  File.open(home_bashrc, "a") do |f|
+    f.write("\n# The RDE copies the user_files/.bashrc_additions file, from the host machine (if it is present) during")
+    f.write("\n# the image build process. This is the RDE's mechanism for letting you define custom commands, aliases, variables")
+    f.write("\n# etc... that you want in the new RDE image. You should not modify this file in the container because the changes")
+    f.write("\n# will be available in the single container. Instead, edit the file on your host and build a new RDE image.")
+    f.write("\nsource ~/.bashrc_additions\n")
+  end
+end

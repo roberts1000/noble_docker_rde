@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Open a second terminal on the RDE. Execute bin/run or bin/start to start the first terminal.
+
+prefix=$(command -v winpty)
+$prefix docker exec -ti noble_rde bash -l

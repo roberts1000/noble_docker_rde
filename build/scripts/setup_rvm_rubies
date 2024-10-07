@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+
+# The first version in the list is set as the default Ruby in RVM.
+RUBIES_TO_INSTALL = ['3.3.5']
+RUBYGEMS_TO_INSTALL = '3.5.21'
+
+RUBIES_TO_INSTALL.each do |version_string|
+  puts "Installing Ruby #{version_string}"
+  system "/bin/bash -l -c 'rvm install #{version_string}'"
+  puts "Using Ruby #{version_string}"
+  # `--default` is critical. Without it, `rvm use x.y.z` only applies to the life of the current 'system "/bin/bash ..' call
+  # Any subsequent 'system' calls will revert back to using the default Ruby (which is the first Ruby that is installed)
+  # and not the Ruby in the current iteration of the loop (which is what the script expects).
+  system "/bin/bash -l -c 'rvm use #{version_string} --default'"
+  puts "Installing RubyGems #{RUBYGEMS_TO_INSTALL}"
+  system "/bin/bash -l -c 'gem update --system #{RUBYGEMS_TO_INSTALL}'"
+  puts "Installing Starting Gems"
+  system "/bin/bash -l -c 'gem install rspec_n mailcatcher'"
+end
+
+system "/bin/bash -l -c 'rvm use #{RUBIES_TO_INSTALL.first} --default'"

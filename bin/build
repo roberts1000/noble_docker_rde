@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Build the RDE image.
+
+prefix=$(command -v winpty)
+$prefix docker build -t noble_rde_image .

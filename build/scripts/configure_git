@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+# Users must add files named "full_name", and "email_address" to the "user_files" folder before building an image.
+user_files_dir_path = File.expand_path("../../user_files/", __FILE__)
+full_name_file_path = File.read(user_files_dir_path + "/full_name")
+email_address_file_path = File.read(user_files_dir_path + "/email_address")
+
+full_name = full_name_file_path.squeeze(" ").rstrip
+email_address = email_address_file_path.squeeze(" ").rstrip
+editor = "nano"
+color_ui = "true"
+global_ignore = "~/.gitignore_global"
+
+system "/bin/bash -l -c 'git config --global user.name \"#{full_name}\"'"
+system "/bin/bash -l -c 'git config --global user.email \"#{email_address}\"'"
+system "/bin/bash -l -c 'git config --global core.editor \"#{editor}\"'"
+system "/bin/bash -l -c 'git config --global color.ui \"#{color_ui}\"'"
+system "/bin/bash -l -c 'git config --global core.excludesfile \"#{global_ignore}\"'"

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Execute the recommended container creation command.
+#
+# Ports
+#  1080:1080 - MailCatcher
+#  22:22     - SSH
+#  3000:3000 - Ruby on Rails
+#  3306:3306 - MySQL
+#  8000:8000 - Jekyll / Static Web Server Pages
+#  8080:80   - HTTP
+#  5432:5432 - PostgreSQL
+#  7100:7101 - X Font Server
+
+prefix=$(command -v winpty)
+$prefix docker run -ti -p 1080:1080 -p 22:22 -p 3000:3000 -p 3306:3306 -p 5432:5432 -p 7100:7101 -p 8000:8000 -p 8080:80 --name noble_rde noble_rde_image
