@@ -333,7 +333,7 @@ RUN echo "\n# Define system aliases" | tee -a ~/.bashrc && \
 # a version of NodeJS that is not installed in the system. The system version can be used by executing 'nvm use system'.
 # The following is recommended by from https://github.com/nodesource/distributions#installation-instructions.
 # Find latest versions at https://nodejs.org/download/release/latest-v22.x/.
-ENV NODEJS_MAJOR_VERSION=22
+ENV NODEJS_MAJOR_VERSION=23
 # Download and import Nodesource GPG key
 RUN sudo apt-get install -y ca-certificates gnupg && \
     sudo mkdir -p /etc/apt/keyrings && \
