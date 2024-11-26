@@ -2,6 +2,10 @@
 
 Issues are tracked at https://github.com/roberts1000/noble_docker_rde/issues. Changes marked **(Internal)** only impact development. 
 
+## Next Release
+
+1. [#13](../../issues/13): Use `GitLFS` `3.6.0`.
+
 ## 1.1.0 (Oct 28, 2024)
 
 1. [#5](../../issues/5): Use `redis` `7.4.1`.
