@@ -2,6 +2,10 @@
 
 Issues are tracked at https://github.com/roberts1000/noble_docker_rde/issues. Changes marked **(Internal)** only impact development. 
 
+## Next Release
+
+1. [#25](../../issues/25): Add `Ruby` `3.4.1` as the default.
+
 ## 1.2.0 (Nov 26, 2024)
 
 1. [#13](../../issues/13): Use `GitLFS` `3.6.0`.

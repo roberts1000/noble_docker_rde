@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 # The first version in the list is set as the default Ruby in RVM.
-RUBIES_TO_INSTALL = ['3.3.6']
+RUBIES_TO_INSTALL = ['3.4.1', '3.3.6']
 RUBYGEMS_TO_INSTALL = '3.5.23'
 
 RUBIES_TO_INSTALL.each do |version_string|
