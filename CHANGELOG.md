@@ -5,6 +5,7 @@ Issues are tracked at https://github.com/roberts1000/noble_docker_rde/issues. Ch
 ## Next Release
 
 1. [#37](../../issues/37): Use `nvm` `0.40.2`.
+1. [#39](../../issues/39): Make `Node.js` `23.10.0` the default.
 
 ## 1.3.0 (Jan 20, 2025)
 
