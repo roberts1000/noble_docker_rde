@@ -2,13 +2,13 @@
 
 Issues are tracked at https://github.com/roberts1000/noble_docker_rde/issues. Changes marked **(Internal)** only impact development. 
 
-## Next Release
+## 1.4.0 (Jun 27, 2025)
 
-1. [#37](../../issues/37): Use `nvm` `0.40.3`.
+1. [#37](../../issues/37): Make `nvm` `0.40.3` the default.
 1. [#39](../../issues/39): Make `Node.js` `23.10.0` the default.
 1. [#42](../../issues/42): Add `Ruby` `3.4.4` as the default.
 1. [#44](../../issues/44): Remove `Ruby` `3.4.1`.
-1. [#46](../../issues/46): Make RubyGems 3.6.9 and Bundler 2.6.9 the default.
+1. [#46](../../issues/46): Make `RubyGems` `3.6.9` and `Bundler` `2.6.9` the default.
 1. [#48](../../issues/48): Make `GitLFS` `3.7.0` the default.
 1. [#50](../../issues/50): Make `Node.js` `24.3.0` the default.
 1. [#52](../../issues/52): Make `redis` `8.0.2` the default.
