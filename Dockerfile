@@ -347,7 +347,7 @@ RUN sudo apt-get update -qq && sudo apt-get install -y nodejs
 
 # *****************************************************************************************************************************
 # Install nvm.
-ENV NVM_VERSION=0.40.2
+ENV NVM_VERSION=0.40.3
 ENV DEFAULT_NODEJS_VERSION=$NODEJS_MAJOR_VERSION.10.0
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v$NVM_VERSION/install.sh | bash
 # The 'source /home/$DEV_USER/.nvm/nvm.sh' statements below are a hack. The above 'curl' command installs nvm and adds some
