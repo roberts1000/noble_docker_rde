@@ -2,7 +2,7 @@ FROM ubuntu:24.04
 
 # Place this at the top to ensure the Docker cache is busted when the version is updated. The value of IMAGE_VERSION is
 # displayed in the command prompt of a container.
-ENV IMAGE_VERSION=1.3.0
+ENV IMAGE_VERSION=1.4.0
 
 # *****************************************************************************************************************************
 # Configure the proxy. Uncomment if needed.
