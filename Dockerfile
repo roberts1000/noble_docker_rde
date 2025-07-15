@@ -313,20 +313,20 @@ RUN $BUILD_SCRIPTS_DIR/setup_rvm_rubies
 # *****************************************************************************************************************************
 # Add useful command aliases to the ~/.bashrc so they can be used in the shell.
 RUN echo "\n# Define system aliases" | tee -a ~/.bashrc && \
-  # bo - run bundle outdated
+  # bo  - Run 'bundle outdated'.
   echo "alias bo='bundle outdated" | tee -a ~/.bashrc && \
-  # boc - return the number of outdated gems in a project.
+  # boc - Return the number of outdated gems in a project.
   echo "alias boc='bundle outdated | grep -c \"*\"'" | tee -a ~/.bashrc && \
+  # cdb - Change directory to the $BUILD_DIR directory.
+  echo "alias cdb='cd $BUILD_DIR'" | tee -a ~/.bashrc && \
+  # cdp - Change directory to the $PROJECTS_DIR directory.
+  echo "alias cdp='cd $PROJECTS_DIR'" | tee -a ~/.bashrc && \
   # la - A better ls command.
   echo "alias la='ls -lha'" | tee -a ~/.bashrc && \
   # railss - Start a rails server.
   echo "alias railss='rails s -b 0.0.0.0 -p 3000'" | tee -a ~/.bashrc && \
-  # cdp - Change directory to the $PROJECTS_DIR directory.
-  echo "alias cdp='cd $PROJECTS_DIR'" | tee -a ~/.bashrc && \
-  # gg - Execute git gone.
+  # gg - Sync master and execute 'git gone'.
   echo "alias gg='git checkout master && git pull && git gone -pd'" | tee -a ~/.bashrc && \
-  # cdb - Change directory to the $BUILD_DIR directory.
-  echo "alias cdb='cd $BUILD_DIR'" | tee -a ~/.bashrc && \
   echo "\n" | tee -a ~/.bashrc
 # *****************************************************************************************************************************
 
