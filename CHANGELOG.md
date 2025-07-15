@@ -2,6 +2,10 @@
 
 Issues are tracked at https://github.com/roberts1000/noble_docker_rde/issues. Changes marked **(Internal)** only impact development. 
 
+## Next Release
+
+1. [#58](../../issues/58): Fix `gg` alias not written to `~/.bashrc`.
+
 ## 1.4.0 (Jun 27, 2025)
 
 1. [#37](../../issues/37): Make `nvm` `0.40.3` the default.
