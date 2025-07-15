@@ -6,6 +6,7 @@ Issues are tracked at https://github.com/roberts1000/noble_docker_rde/issues. Ch
 
 1. [#58](../../issues/58): Fix `gg` alias not written to `~/.bashrc`.
 1. [#60](../../issues/60): Add `bo` alias.
+1. [#62](../../issues/62): Sort aliases.
 
 ## 1.4.0 (Jun 27, 2025)
 
