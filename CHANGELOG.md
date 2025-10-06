@@ -8,6 +8,7 @@ Issues are tracked at https://github.com/roberts1000/noble_docker_rde/issues. Ch
 1. [#78](../../issues/78): Make `RubyGems` `3.7.2` and `Bundler` `2.7.2` the default.
 1. [#80](../../issues/80): Add `Ruby` `3.4.6` as the default.
 1. [#82](../../issues/82): Remove `Ruby` `3.4.5` support.
+1. [#84](../../issues/84): Make `redis` `8.2.2` the default.
 
 ## 1.5.0 (Oct 06, 2025)
 
