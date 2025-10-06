@@ -2,6 +2,10 @@
 
 Issues are tracked at https://github.com/roberts1000/noble_docker_rde/issues. Changes marked **(Internal)** only impact development. 
 
+## Next Release
+
+1. [#76](../../issues/76): Make `NodeJS` `24.9.0` the default.
+
 ## 1.5.0 (Oct 06, 2025)
 
 1. [#58](../../issues/58): Fix `gg` alias not written to `~/.bashrc`.
