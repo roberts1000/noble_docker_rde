@@ -447,7 +447,7 @@ RUN sudo chown $DEV_USER:$DEV_USER $BUILD_TMP_DIR/redis && \
 # Install PostgreSQL. Docker doesn't automatically start the service when a container starts. It has to be started by calling
 #  sudo server postgresql start
 # This is done at the very bottom of the Dockerfile.
-ARG POSTGRES_VERSION=17
+ARG POSTGRES_VERSION=18
 RUN wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add - && \
   sudo add-apt-repository "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main" && \
   sudo apt-get update -qq && \
