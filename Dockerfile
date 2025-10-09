@@ -2,7 +2,7 @@ FROM ubuntu:24.04
 
 # Place this at the top to ensure the Docker cache is busted when the version is updated. The value of IMAGE_VERSION is
 # displayed in the command prompt of a container.
-ENV IMAGE_VERSION=1.5.0
+ENV IMAGE_VERSION=1.6.0
 
 # *****************************************************************************************************************************
 # Configure the proxy. Uncomment if needed.
@@ -400,7 +400,7 @@ RUN sudo chown $DEV_USER:$DEV_USER $BUILD_TMP_DIR/chrome && \
 
 # *****************************************************************************************************************************
 # Install ChromeDriver. Users must place a version of ChromeDriver, that matches Chrome, inside the $HOST_BINARIES_DIR.
-# ChromeDriver can be downloaded at https://sites.google.com/a/chromium.org/chromedriver/downloads
+# ChromeDriver can be downloaded at https://googlechromelabs.github.io/chrome-for-testing.
 # The file should be named chromedriver-linux64.zip.
 ENV CHROME_DRIVER_FILE=chromedriver-linux64.zip
 ENV FULL_CHROME_DRIVER_FILE=$BINARIES_DIR/$CHROME_DRIVER_FILE
