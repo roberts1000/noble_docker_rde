@@ -314,7 +314,7 @@ RUN $BUILD_SCRIPTS_DIR/setup_rvm_rubies
 # Add useful command aliases to the ~/.bashrc so they can be used in the shell.
 RUN echo "\n# Define system aliases" | tee -a ~/.bashrc && \
   # bo  - Run 'bundle outdated'.
-  echo "alias bo='bundle outdated" | tee -a ~/.bashrc && \
+  echo "alias bo='bundle outdated'" | tee -a ~/.bashrc && \
   # boc - Return the number of outdated gems in a project.
   echo "alias boc='bundle outdated | grep -c \"*\"'" | tee -a ~/.bashrc && \
   # cdb - Change directory to the $BUILD_DIR directory.
