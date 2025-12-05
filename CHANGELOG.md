@@ -8,6 +8,7 @@ Issues are tracked at https://github.com/roberts1000/noble_docker_rde/issues. Ch
 1. [#94](../../issues/94): Add `Ruby` `3.4.7` as the default.
 1. [#96](../../issues/96): Remove `Ruby` `3.4.6` support.
 1. [#98](../../issues/98): Make `GitLFS` `3.7.1` the default.
+1. [#100](../../issues/100): Make `Redis` `8.4.0` the default.
 
 ## 1.6.0 (Oct 08, 2025)
 
