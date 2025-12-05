@@ -2,9 +2,9 @@ FROM ubuntu:24.04
 
 # Place this at the top to ensure the Docker cache is busted when the version is updated. The value of IMAGE_VERSION is
 # displayed in the command prompt of a container.
-ENV IMAGE_VERSION=1.6.0
+ENV IMAGE_VERSION=1.7.0
 
-#7# Configure the proxy. Uncomment if needed.
+# Configure the proxy. Uncomment if needed.
 #
 # ARG PROXY=<some proxy here>
 # ARG NO_PROXY=host.docker.internal
