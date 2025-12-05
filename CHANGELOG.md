@@ -5,6 +5,7 @@ Issues are tracked at https://github.com/roberts1000/noble_docker_rde/issues. Ch
 ## Next Release
 
 1. [#92](../../issues/92): Make `NodeJS` `24.11.1` the default.
+1. [#94](../../issues/94): Add `Ruby` `3.4.7` as the default.
 
 ## 1.6.0 (Oct 08, 2025)
 
