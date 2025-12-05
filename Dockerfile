@@ -4,8 +4,7 @@ FROM ubuntu:24.04
 # displayed in the command prompt of a container.
 ENV IMAGE_VERSION=1.6.0
 
-# *****************************************************************************************************************************
-# Configure the proxy. Uncomment if needed.
+#7# Configure the proxy. Uncomment if needed.
 #
 # ARG PROXY=<some proxy here>
 # ARG NO_PROXY=host.docker.internal
