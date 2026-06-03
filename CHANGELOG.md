@@ -9,6 +9,7 @@ Issues are tracked at https://github.com/roberts1000/noble_docker_rde/issues. Ch
 1. [#118](../../issues/118): Add Ruby 3.4.9 as the default.
 1. [#120](../../issues/120): Remove Ruby 3.4.8 support.
 1. [#122](../../issues/122): Make `NodeJS` `24.16.0` the default.
+1. [#124](../../issues/124): Make `Redis` `8.6.3` the default.
 
 ## 1.8.0 (Jun 02, 2026)
 
