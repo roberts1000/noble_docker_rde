@@ -543,6 +543,14 @@ RUN sudo sed -i "/^#*X11/d" /etc/ssh/sshd_config && \
 # *****************************************************************************************************************************
 
 # *****************************************************************************************************************************
+# Temporarily suppress some warnings that come from rdoc. See https://github.com/roberts1000/noble_docker_rde/issues/126.
+RUN mv $BUILD_TEMPLATES_DIR/.suppressed_ruby_warnings $HOME_DIR/.suppressed_ruby_warnings
+RUN sudo chown -R $DEV_USER:$DEV_USER $HOME_DIR/.suppressed_ruby_warnings
+# Make Ruby require this file every time Ruby starts.
+ENV RUBYOPT="-r$HOME_DIR/.suppressed_ruby_warnings/rdoc"
+# *****************************************************************************************************************************
+
+# *****************************************************************************************************************************
 # Configure the user prompt.
 RUN echo 'export PS1='"'"'\[\e]0;\u@\h \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h (rde-$IMAGE_VERSION)\[\033[01;33m\]`__git_ps1` \[\033[01;31m\]$RUBY_VERSION\[\033[35m\]$MSYSTEM\[\033[01;00m\] \[\033[01;34m\]\w\n\[\033[01;37m\]\$ \[\033[01;00m\]'"'" | tee -a ~/.bashrc && \
   # Configure the root prompt.
