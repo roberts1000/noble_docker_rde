@@ -2,7 +2,7 @@
 
 Issues are tracked at https://github.com/roberts1000/noble_docker_rde/issues. Changes marked **(Internal)** only impact development.
 
-## Next Release
+## 1.10.0 (Jun 06, 2026)
 
 1. [#126](../../issues/126): Temporarily suppress `rdoc` constant warnings.
 1. [#129](../../issues/129): Add `Ruby` `4.0.5` as the default.
