@@ -7,6 +7,7 @@ Issues are tracked at https://github.com/roberts1000/noble_docker_rde/issues. Ch
 1. [#126](../../issues/126): Temporarily suppress `rdoc` constant warnings.
 1. [#129](../../issues/129): Add `Ruby` `4.0.5` as the default.
 1. [#132](../../issues/132): Remove `Ruby` `3.4.9` support.
+1. [#124](../../issues/124): Make `Redis` `8.6.4` the default.
 
 ## 1.9.0 (Jun 03, 2026)
 
