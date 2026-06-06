@@ -2,7 +2,7 @@
 
 Issues are tracked at https://github.com/roberts1000/noble_docker_rde/issues. Changes marked **(Internal)** only impact development.
 
-## Next Release
+## 1.10.1 (Jun 06, 2026)
 
 1. [#138](../../issues/138): Use `rvm` `e5e61a9`.
 
