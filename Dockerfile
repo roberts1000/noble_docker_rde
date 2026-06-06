@@ -296,7 +296,8 @@ ENV PATH=$HOME_DIR/.gitbin:$PATH
 RUN command curl -sSL https://rvm.io/mpapis.asc | gpg --import - && \
   command curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -
 # Download and install the latest stable RVM.
-RUN \curl -sSL https://get.rvm.io | bash -s stable
+# RUN \curl -sSL https://get.rvm.io | bash -s stable
+RUN \curl -sSL https://raw.githubusercontent.com/rvm/rvm/master/binscripts/rvm-installer | bash -s branch rvm/e5e61a9
 # Ensure RVM is defined correctly in the dotfiles (.profile, .bashrc, etc...). This must be executed as a login shell to work.
 RUN /bin/bash -l -c "source /home/$DEV_USER/.rvm/scripts/rvm"
 # Apps can specify the Ruby version in their Gemfile instead of the .ruby-version file. This causes RVM to throw a warning.
