@@ -10,6 +10,7 @@ Issues are tracked at https://github.com/roberts1000/noble_docker_rde/issues. Ch
 1. [#149](../../issues/149): Make `NodeJS` `24.22.3` the default.
 1. [#151](../../issues/151): Make `GitLFS` `3.8.1` the default.
 1. [#153](../../issues/153): Make `RubyGems` and `Bundler` `4.1.0` the default.
+1. [#156](../../issues/156): Make `Redis` `8.8.4` the default.
 
 ## 1.10.1 (Jun 06, 2026)
 
