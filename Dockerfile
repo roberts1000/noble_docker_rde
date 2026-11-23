@@ -370,6 +370,11 @@ RUN /bin/bash -l -c "source /home/$DEV_USER/.nvm/nvm.sh && nvm install $DEFAULT_
 # *****************************************************************************************************************************
 
 # *****************************************************************************************************************************
+# Update npm.
+RUN /bin/bash -l -c "source /home/$DEV_USER/.nvm/nvm.sh && npm install -g npm@latest"
+# *****************************************************************************************************************************
+
+# *****************************************************************************************************************************
 # Install yarn.
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - && \
   echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list && \

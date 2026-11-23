@@ -2,6 +2,10 @@
 
 Issues are tracked at https://github.com/roberts1000/noble_docker_rde/issues. Changes marked **(Internal)** only impact development.
 
+## Next Release
+
+1. [#160](../../issues/160): Add step to update npm.
+
 ## 1.11.0 (Nov 23, 2026)
 
 1. [#142](../../issues/142): Add `Ruby` `4.0.10` support.
