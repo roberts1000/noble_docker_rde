@@ -5,6 +5,7 @@ Issues are tracked at https://github.com/roberts1000/noble_docker_rde/issues. Ch
 ## Next Release
 
 1. Add `Ruby` `4.0.10` support.
+1. [#144](../../issues/144): Remove `Ruby` `4.0.5` support.
 
 ## 1.10.1 (Jun 06, 2026)
 
